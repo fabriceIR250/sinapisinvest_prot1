@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Drinks | Sinapis Investment Company Ltd</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJMMSA5TDEyIDIyTDIzIDlMMTIgMloiIGZpbGw9IiMxOTU2YmYiLz48cGF0aCBkPSJNOCAxMUM4IDkuMzQgOS4zNCA4IDExIDhIMTNDMTQuNjYgOCAxNiA5LjM0IDE2IDExQzE2IDEyLjY2IDE0LjY2IDE0IDEzIDE0SDExQzkuMzQgMTQgOCAxMi42NiA4IDExWiIgZmlsbD0iI2ZmYzEwNyIvPjwvc3ZnPg==">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Sinapis Investment Company Ltd - Serving You with Quality Products and Services in Rubavu, Rwanda">
+    <meta name="keywords" content="shop, food, banking, IT services, Rubavu, Rwanda">
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Top Bar -->
+    <div class="bg-blue-900 text-white py-2 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
+            <div class="flex items-center mb-2 md:mb-0">
+                <div class="mr-6">
+                    <i class="fas fa-phone mr-2"></i> 0788997534 / 0785967217
+                </div>
+                <div>
+                    <i class="fas fa-envelope mr-2"></i> info@sinapisinvest.com
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="mr-4">
+                    <i class="fas fa-map-marker-alt mr-2"></i> Western Province, Rubavu district
+                </div>
+                <div class="flex space-x-3">
+                    <a href="#" class="hover:text-yellow-400 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-yellow-400 transition duration-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-yellow-400 transition duration-300"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <div class="h-10 w-10 bg-blue-600 rounded-lg flex items-center justify-center mr-2">
+                        <span class="text-yellow-400 font-bold text-xl">S</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-blue-900 text-xl">SINAPIS</span>
+                        <span class="text-gray-600 text-xs block -mt-1">INVESTMENT COMPANY LTD</span>
+                    </div>
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                
+                <!-- Desktop navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About Us</a>
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-700 group-hover:text-blue-600 transition duration-300">
+                            Services 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                            <a href="shop.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Our Shop</a>
+                            <a href="food.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 bg-blue-50 text-blue-600">Food & Drinks</a>
+                            <a href="banking.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Banking Services</a>
+                            <a href="it.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">IT Services</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+                    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">Get a Quote</a>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Mobile navigation menu -->
+        <div id="mobile-menu" class="md:hidden bg-white pb-4 hidden">
+            <div class="container mx-auto px-4 space-y-3">
+                <a href="index.html" class="block py-2 px-4 text-gray-700">Home</a>
+                <a href="about.html" class="block py-2 px-4 text-gray-700">About Us</a>
+                
+                <div class="border-t border-gray-200 py-2">
+                    <div class="px-4 py-2 text-gray-600 font-semibold">Our Services</div>
+                    <a href="shop.html" class="block py-2 px-6 text-gray-700">Our Shop</a>
+                    <a href="food.html" class="block py-2 px-6 text-blue-600 font-semibold">Food & Drinks</a>
+                    <a href="banking.html" class="block py-2 px-6 text-gray-700">Banking Services</a>
+                    <a href="it.html" class="block py-2 px-6 text-gray-700">IT Services</a>
+                </div>
+                
+                <a href="contact.html" class="block py-2 px-4 text-gray-700">Contact</a>
+                <div class="px-4 pt-2">
+                    <a href="contact.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center px-4 py-2 rounded-md transition duration-300">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="bg-gray-100 py-8">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800">Food & Drinks</h1>
+                <div class="w-24 h-1 bg-blue-600 mx-auto my-6"></div>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                        <img src="https://images.unsplash.com/photo-1626200711570-ea66d2226668" alt="Food Services" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Fresh and Tasty Food Every Day</h2>
+                        <p class="text-gray-600 mb-4">
+                            We cook fresh and tasty food for you every day. Whether you want a full meal or just a snack, we are here to serve you. We also offer drinks and catering for events.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            Our experienced chefs prepare delicious meals using quality ingredients. From local dishes to international cuisine, we have options to satisfy every palate.
+                        </p>
+                        <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-3">Food Service Hours</h3>
+                            <ul class="text-gray-700">
+                                <li class="mb-2">Breakfast: 7:00 AM - 10:00 AM</li>
+                                <li class="mb-2">Lunch: 12:00 PM - 3:00 PM</li>
+                                <li class="mb-2">Dinner: 6:00 PM - 9:00 PM</li>
+                                <li>Snacks & Drinks: Available all day</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What We Offer</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Local & International Food</h3>
+                        <p class="text-gray-600">
+                            A variety of dishes from Rwandan cuisine to international favorites.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Snacks & Fast Food</h3>
+                        <p class="text-gray-600">
+                            Quick bites and fast food options for when you're on the go.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Soft Drinks & Juice</h3>
+                        <p class="text-gray-600">
+                            Refreshing beverages including soft drinks, fresh juices, and more.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Event Food Services</h3>
+                        <p class="text-gray-600">
+                            Catering services for special events, meetings, and celebrations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Food Gallery</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <img src="https://novoxinc.com/cdn/shop/articles/elevate-your-hotel-restaurant-experience-with-designer-buffet-table-top-food-display-ware_hero_image_1024x576px_1024x.jpg?v=1693563963" alt="Food Display" class="rounded-lg shadow-md w-full h-64 object-cover">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/31/ec/37/k-e-catering-services.jpg?w=800&h=500&s=1" alt="Catering Service" class="rounded-lg shadow-md w-full h-64 object-cover">
+                    <img src="https://easyfoodhandlers.com/wp-content/uploads/2024/04/Why-Its-So-Important-To-Properly-Prep-Food.png" alt="Food Preparation" class="rounded-lg shadow-md w-full h-64 object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-blue-800 text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-12">Catering Services</h2>
+                    
+                    <div class="bg-blue-700 p-8 rounded-lg shadow-lg mb-12">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Let Us Cater Your Next Event</h3>
+                        <p class="text-lg mb-8 text-blue-100">
+                            From small gatherings to large celebrations, we offer catering services tailored to your needs. Our experienced team will work with you to create a menu that suits your event and budget.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex items-start">
+                                <div class="mr-4 text-yellow-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Corporate Events</h4>
+                                    <p class="text-blue-100">Business meetings, conferences, and office celebrations.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="mr-4 text-yellow-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Private Celebrations</h4>
+                                    <p class="text-blue-100">Birthdays, anniversaries, and family gatherings.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="mr-4 text-yellow-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Weddings</h4>
+                                    <p class="text-blue-100">From intimate ceremonies to large receptions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="mr-4 text-yellow-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Community Events</h4>
+                                    <p class="text-blue-100">Local gatherings, fundraisers, and cultural celebrations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="contact.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-lg transition duration-300">Request Catering Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-auto">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 bg-blue-600 rounded-lg flex items-center justify-center mr-2">
+                            <span class="text-yellow-400 font-bold text-xl">S</span>
+                        </div>
+                        <div>
+                            <span class="font-bold text-white text-xl">SINAPIS</span>
+                            <span class="text-gray-400 text-xs block -mt-1">INVESTMENT COMPANY LTD</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Serving you with quality products and services in Rubavu, Rwanda. Our goal is to make life easier for our customers and create job opportunities in our community.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="h-10 w-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="h-10 w-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="h-10 w-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white transition duration-300">Our Shop</a></li>
+                        <li><a href="food.html" class="text-gray-400 hover:text-white transition duration-300">Food & Drinks</a></li>
+                        <li><a href="banking.html" class="text-gray-400 hover:text-white transition duration-300">Banking Services</a></li>
+                        <li><a href="it.html" class="text-gray-400 hover:text-white transition duration-300">IT Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Our Services -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-store text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Quality products for your daily needs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-utensils text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Fresh food and catering services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-university text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Banking agency services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-laptop text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-gray-400">IT solutions and support</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Western Province, Rubavu district, Rwanda</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-gray-400">0788997534 / 0785967217</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-gray-400">info@sinapisinvest.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Mon-Fri: 8am-7pm<br>Sat: 9am-5pm<br>Sun: 10am-3pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="bg-gray-950 py-4">
+            <div class="container mx-auto px-4 text-center">
+                <p class="text-gray-500">
+                    &copy; <script>document.write(new Date().getFullYear());</script> Sinapis Investment Company Ltd. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
