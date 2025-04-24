@@ -47,72 +47,83 @@
     </div>
 
     <!-- Navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <nav class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center">
-                    <div class="h-10 w-10 bg-blue-600 rounded-lg flex items-center justify-center mr-2">
-                        <span class="text-yellow-400 font-bold text-xl">S</span>
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+        <nav class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+                <div class="h-10 w-10 bg-blue-600 rounded-lg flex items-center justify-center mr-2">
+                    <span class="text-yellow-400 font-bold text-xl">S</span>
+                </div>
+                <div>
+                    <span class="font-bold text-blue-900 text-xl">SINAPIS</span>
+                    <span class="text-gray-600 text-xs block -mt-1">INVESTMENT COMPANY LTD</span>
+                </div>
+            </a>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Desktop navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-blue-600 font-semibold transition duration-300">🏠 Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">📘 About Us</a>
+
+                <div class="relative group">
+                    <button id="services-desktop-btn" class="flex items-center text-gray-700 group-hover:text-blue-600 font-medium transition duration-300">
+                        🛠️ Services 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <div class="absolute left-0 mt-3 w-52 bg-white shadow-xl rounded-xl overflow-hidden z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-1 transition-all duration-300 ease-in-out">
+                        <a href="shop.html" class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">🛍️ Our Shop</a>
+                        <a href="food.html" class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">🍽️ Food & Drinks</a>
+                        <a href="banking.html" class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">🏦 Banking Services</a>
+                        <a href="it.html" class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">💻 IT Services</a>
                     </div>
-                    <div>
-                        <span class="font-bold text-blue-900 text-xl">SINAPIS</span>
-                        <span class="text-gray-600 text-xs block -mt-1">INVESTMENT COMPANY LTD</span>
-                    </div>
-                </a>
-                
-                <!-- Mobile menu button -->
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </div>
+
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">📞 Contact</a>
+                <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">📩 Get a Quote</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile navigation menu -->
+    <div id="mobile-menu" class="md:hidden bg-white pb-4 hidden">
+        <div class="container mx-auto px-4 space-y-3">
+            <a href="index.html" class="block py-2 px-4 text-blue-600 font-semibold">🏠 Home</a>
+            <a href="about.html" class="block py-2 px-4 text-gray-700">📘 About Us</a>
+
+            <div class="border-t border-gray-200 py-2">
+                <button id="services-mobile-btn" class="w-full flex justify-between items-center px-4 py-2 text-gray-600 font-semibold">
+                    <span>🛠️ Our Services</span>
+                    <svg id="services-mobile-arrow" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </button>
-                
-                <!-- Desktop navigation -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About Us</a>
-                    <div class="relative group">
-                        <button class="flex items-center text-gray-700 group-hover:text-blue-600 transition duration-300">
-                            Services 
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
-                            <a href="shop.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Our Shop</a>
-                            <a href="food.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Food & Drinks</a>
-                            <a href="banking.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Banking Services</a>
-                            <a href="it.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 bg-blue-50 text-blue-600">IT Services</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
-                    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">Get a Quote</a>
-                </div>
-            </nav>
-        </div>
-        
-        <!-- Mobile navigation menu -->
-        <div id="mobile-menu" class="md:hidden bg-white pb-4 hidden">
-            <div class="container mx-auto px-4 space-y-3">
-                <a href="index.html" class="block py-2 px-4 text-gray-700">Home</a>
-                <a href="about.html" class="block py-2 px-4 text-gray-700">About Us</a>
-                
-                <div class="border-t border-gray-200 py-2">
-                    <div class="px-4 py-2 text-gray-600 font-semibold">Our Services</div>
-                    <a href="shop.html" class="block py-2 px-6 text-gray-700">Our Shop</a>
-                    <a href="food.html" class="block py-2 px-6 text-gray-700">Food & Drinks</a>
-                    <a href="banking.html" class="block py-2 px-6 text-gray-700">Banking Services</a>
-                    <a href="it.html" class="block py-2 px-6 text-blue-600 font-semibold">IT Services</a>
-                </div>
-                
-                <a href="contact.html" class="block py-2 px-4 text-gray-700">Contact</a>
-                <div class="px-4 pt-2">
-                    <a href="contact.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center px-4 py-2 rounded-md transition duration-300">Get a Quote</a>
+                <div id="services-mobile-dropdown" class="hidden">
+                    <a href="shop.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">🛍️ Our Shop</a>
+                    <a href="food.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">🍽️ Food & Drinks</a>
+                    <a href="banking.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">🏦 Banking Services</a>
+                    <a href="it.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">💻 IT Services</a>
                 </div>
             </div>
+
+            <a href="contact.html" class="block py-2 px-4 text-gray-700">📞 Contact</a>
+            <div class="px-4 pt-2">
+                <a href="contact.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center px-4 py-2 rounded-md transition duration-300">📩 Get a Quote</a>
+            </div>
         </div>
-    </header>
+    </div>
+</header>
+
 
     <!-- Main Content -->
     <main class="flex-grow">
